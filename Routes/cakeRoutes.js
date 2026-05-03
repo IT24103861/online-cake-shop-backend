@@ -5,7 +5,7 @@ import {
     getCakeById, 
     updateCake, 
     deleteCake 
-} from "../Controllers/cakeController.js";
+} from "../controllers/cakeController.js";
 import { protect, isAdmin } from "../middleware/authMiddleware.js";
 
 const router = express.Router();
