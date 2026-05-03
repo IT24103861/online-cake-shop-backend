@@ -1,6 +1,6 @@
 import express from 'express';
 import { protect, isAdmin } from '../middleware/authMiddleware.js';
-import { registerUser, loginUser, getuser, getAllDrivers,googlelogin,updateUser ,sendOtp,validateOtp,updateUserStatus,getAllUsers,deleteUser,updateUserRole} from '../Controllers/userController.js';
+import { registerUser, loginUser, getuser, getAllDrivers,googlelogin,updateUser ,sendOtp,validateOtp,updateUserStatus,getAllUsers,deleteUser,updateUserRole} from '../controllers/userController.js';
 const router = express.Router();
 
 router.post('/create', registerUser);
